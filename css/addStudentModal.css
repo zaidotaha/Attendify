@@ -1,0 +1,129 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    font-family:'Proza Libre';
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 30px 0px 30px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+    border-radius: 75px;
+    box-shadow: -1px 0px 30px 8px rgba(0,0,0,0.25);
+-webkit-box-shadow: -1px 0px 30px 8px rgba(0,0,0,0.25);
+-moz-box-shadow: -1px 0px 30px 8px rgba(0,0,0,0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .modal-content-title{
+    font-size:2.5rem;
+    font-weight: bold;
+  }
+
+  .modal-content-hr{
+    margin: 18px;
+    width: 87%;
+    border: none;
+    background-color:#888;
+    height:2px;
+  }
+
+  .modal-content-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width:90%;
+  }
+
+  .modal-content-form-normal-input, .modal-content-form-normal-input input,.modal-content-form-normal-input select, .modal-content-form-normal-input textarea{
+    width:100%;
+  }
+
+  .modal-content-form-normal-input-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .modal-content-form-normal-input-row div{
+    width: 45%;
+  }
+  .modal-content-form-normal-input-row div input{
+    width:100%;
+  }
+
+  .modal-content-form div, .modal-content-form div input, .modal-content-form div select, .modal-content-form div textarea{
+    font-size: 1.4rem;
+    margin: 3px 0px;
+  }
+
+  .modal-content-form div textarea{
+    height:10rem;
+    resize: none;
+  }
+
+  .modal-content-form div input, .modal-content-form div select, .modal-content-form div textarea{
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: 2px solid grey;
+  }
+
+  .modal-content p{
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: normal;
+    width:100%;
+  }
+
+  .form_button{
+    margin: 12px;
+    width:150px;
+  } 
+
+  .modal-content hr{
+    margin-top:15px;
+    width:200%;
+  }
+
+  /* The Close Button */
+  .close {
+    
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    position: absolute;
+    right: 30px; top: 15px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

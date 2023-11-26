@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/table_template.css"> 
+    <link rel="stylesheet" href="css/addStudentModal.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Proza+Libre:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid-container" id="grid-container">
+        <div class="grid-header">
+                <header class="logo-text">
+                    <span class="logo">
+                        <img src="images/att.png" alt="Logo">
+                    </span>
+                    <div class="text">
+                        <span class="website-name">Attendify</span>
+                    </div>
+                </header>
+                <div class="burger-icon">
+                    <div id="main-burger-icon">
+                        <i class="fa-solid fa-bars" id="burger-icon-1"></i>
+                    </div>
+                    <div id="drop-down-menu2" class="drop-down-menu2">
+                            <div id="burger-icon-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-table"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                    </div>
+                </div>
+                
+        </div>
+        <!-- header responsive -->
+        <!-- <div class="header-responsive">
+            <img src="images/ham-menu.svg" alt="ham menu">
+            <img src="images/logo-no-background.png" alt="logo">
+        </div> -->
+        <!-- drop down list -->
+        <!-- <div class="drop-down-menu">
+            <div class="links">
+                <div class="link">
+                    <i class="fa-solid fa-house"></i>
+                    <span><a href="#">Home</a></span>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-table"></i>
+                    <span><a href="#">trainees</a></span>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-comments"></i>
+                    <span><a href="#">trainees</a></span>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span><a href="#">Announcement</a></span>
+                </div>
+            </div>
+            <div class="devider"></div>
+            <div class="links">
+                <div class="link">
+                    <i class="fa-solid fa-user"></i>
+                    <span><a href="#">Profile</a></span>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span><a href="#">Log Out</a></span>
+                </div>
+            </div>
+        </div> -->
+        <!-- sidebar -->
+        <div class="grid-sidebar"  id="grid-sidebar">
+            <aside id="aside">
+                <div class="wrapper-sidebar">
+                    
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-house"></i>
+                            <span><a href="Home-Trainer.html">Home</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-table"></i>
+                            <span><a href="traineetable_trainer.html">Trainees</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-comments"></i>
+                            <span><a href="feedback Table.html">Feedback</a></span>
+                        </div>
+                        
+                    </div>
+                    <div class="devider"></div>
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-user"></i>
+                            <span><a href="Trainee Profile.html">Profile</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span><a href="welcome.html">Log Out</a></span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        <!-- body content -->
+        <div class="grid-body" id="grid-body">
+            <h1 class="page-title">Trainees Table</h1>
+            <hr>
+            <!-- Your html code here -->
+            <div class="button_template">
+                <button class="button" id="add_student">Add Student</button>
+                <button class="button" id="add_tasks">Add Tasks</button>
+                <button class="button" id="add_feedback">Add Feedback</button>
+            </div>
+            <div class="table_template">
+                <table id="table">
+                    <tr id="head-row">
+                        <th class="corner1">ID</th>
+                        <th>Name</th>
+                        <th>Solved Tasks</th>
+                        <th>Total Tasks</th>
+                        <th>Number of Absences</th>
+                        <th class="corner2"></th>
+                    </tr>
+                    <tr id="empty-row">
+                        <td colspan="6">No data to show!</td>
+                    </tr>
+                    <!-- <tr id="second-row">
+                        <td class="corner1">Item1</td>
+                        <td>Item2</td>
+                        <td>Item3</td>
+                        <td>Item4</td>
+                        <td>Item5</td>
+                        <td class="corner2">Item6</td>
+                    </tr>
+                    <tr id="third-row">
+                        <td class="corner1">Item1</td>
+                        <td>Item2</td>
+                        <td>Item3</td>
+                        <td>Item4</td>
+                        <td>Item5</td>
+                        <td class="corner2">Item6</td>
+                    </tr>
+                    <tr id="fourth-row">
+                        <td class="corner1">Item1</td>
+                        <td>Item2</td>
+                        <td>Item3</td>
+                        <td>Item4</td>
+                        <td>Item5</td>
+                        <td class="corner2">Item6</td>
+                    </tr>
+                    <tr id="fifth-row">
+                        <td class="corner1">Item1</td>
+                        <td>Item2</td>
+                        <td>Item3</td>
+                        <td>Item4</td>
+                        <td>Item5</td>
+                        <td class="corner2">Item6</td>
+                    </tr>
+                    <tr id="sixth-row">
+                        <td class="corner1">Item1</td>
+                        <td>Item2</td>
+                        <td>Item3</td>
+                        <td>Item4</td>
+                        <td>Item5</td>
+                        <td class="corner2">Item6</td>
+                    </tr>
+                    <tr id="bottom-row">
+                        <td class="corner1">Item1</td>
+                        <td>Item2</td>
+                        <td>Item3</td>
+                        <td>Item4</td>
+                        <td>Item5</td>
+                        <td class="corner2">Item6</td>
+                    </tr> -->
+                </table>
+            </div>
+
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class = "modal-content-title">
+                        Add a Student     
+                    </div>
+                    <hr class="modal-content-hr">
+                    <div class="modal-content-form">
+                        <div class="modal-content-form-normal-input">
+                            Student Name
+                        </div>
+                        <div class="modal-content-form-normal-input">
+                            <input type="text" value="" id="input_student_name">
+                        </div>
+                        <div class="modal-content-form-normal-input-row">    
+                            <div>Solved Tasks</div>
+                            <div>Absences</div>
+                        </div>
+                        <div class="modal-content-form-normal-input-row">    
+                            <div>
+                                <input type="text" value="" id="input_solved_tasks">
+                            </div>
+                            <div>
+                                <input type="text" value="" id="input_absences">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="submit" id="form_add_student" class="button form_button" value="Add">
+                    </div>
+              </div>
+            </div>
+
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class = "modal-content-title">
+                        Add Tasks    
+                    </div>
+                    <hr class="modal-content-hr">
+                    <div class="modal-content-form">
+                        <div class="modal-content-form-normal-input">
+                            Number of tasks to be added
+                        </div>
+                        <div class="modal-content-form-normal-input">
+                            <input type="text" value="" id="input_tasks_added">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="submit" id="form_add_task" class="button form_button" value="Add">
+                    </div>
+              </div>
+            </div>
+
+            <div id="myModal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class = "modal-content-title">
+                        Add Feedback    
+                    </div>
+                    <hr class="modal-content-hr">
+                    <div class="modal-content-form">
+                        <div class="modal-content-form-normal-input">
+                            Student Name
+                        </div>
+                        <div class="modal-content-form-normal-input">
+                            <select name="students" id="student_list_dropdown">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        
+                        <div class="modal-content-form-normal-input">
+                            Feedback
+                        </div>
+                        <div class="modal-content-form-normal-input">
+                            <textarea type="text" value="" id="input_feedback_text"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="submit" id="form_add_feedback" class="button form_button" value="Add">
+                    </div>
+              </div>
+            </div>
+
+            <div id="myModal4" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class = "modal-content-title">
+                        Edit Student     
+                    </div>
+                    <hr class="modal-content-hr">
+                    <div class="modal-content-form">
+                        <div class="modal-content-form-normal-input">
+                            Student Name
+                        </div>
+                        <div class="modal-content-form-normal-input">
+                            <input type="text" value="" id="input_student_name_edit">
+                        </div>
+                        <div class="modal-content-form-normal-input-row">    
+                            <div>Solved Tasks</div>
+                            <div>Absences</div>
+                        </div>
+                        <div class="modal-content-form-normal-input-row">    
+                            <div>
+                                <input type="text" value="" id="input_solved_tasks_edit">
+                            </div>
+                            <div>
+                                <input type="text" value="" id="input_absences_edit">
+                            </div>
+                        </div>
+                        <input type="hidden" id="std_key" value="">
+                        <input type="hidden" id="row" value="">
+                    </div>
+                    <hr>
+                    <div>
+                        <input type="submit" id="form_edit_student" class="button form_button" value="Save">
+                    </div>
+              </div>
+            </div>
+        
+    </div>
+    <script src="addStudentModal.js"></script>
+    <script src="table_gen.js"></script>
+    <script src="func.js"></script>
+    <script src="dummydata.js"></script>
+</body>
+</html>

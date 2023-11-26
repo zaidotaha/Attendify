@@ -1,0 +1,124 @@
+.grid-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title{
+    width: 98%;
+    text-align: left;
+}
+
+.button_template{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin:20px;
+}
+
+.button{
+    min-width: 30px;
+    background-color: #F99417;
+    color:white;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem .9rem;
+    text-align: center;
+    font-family:'Proza Libre';
+    border: none;
+    cursor: pointer;
+    margin:5px;
+}
+.table_template{
+    width:95%;
+    white-space: nowrap;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+    font-family: 'Proza Libre';
+}
+  
+th, td {
+    text-align: center;
+}
+  
+th {
+    background-color: #5D3891;
+    padding: 16px 12px;
+    color: white;
+}
+
+td {
+    padding:12px;
+}
+
+#head-row .corner1{  
+    border-radius: 25px 0 0 0;
+
+}
+
+#head-row .corner2{
+    border-radius: 0 25px 0 0;
+}
+
+tr:nth-child(even){background-color: #dac5f7}
+tr:nth-child(odd){background-color: rgb(237, 228, 252)}
+
+#bottom-row .corner1{
+    border-radius: 0 0 0 25px;
+}
+
+#bottom-row .corner2{
+    border-radius: 0 0 25px 0;
+}
+
+.table_template{
+    overflow-x:auto;
+}
+
+
+
+#empty-row{
+    height:400px;background-color: rgb(218, 218, 218);
+    font-size: 1.5rem;
+    display: none;
+}
+#empty-row td{
+    border-radius: 0 0 25px 25px;
+}
+
+
+.third-item div{
+    display:inline-block; position: absolute; right:8%; top:55%; transform:translateY(-50%); font-size:1.3rem;
+    cursor: pointer;
+}
+.third-item div i:hover{
+    color:#F99417;
+}
+.third-item{
+    position: relative;
+}
+
+.edit-delete-student-class div{
+    display: flex; 
+    justify-content: center;
+    gap:15%;
+    font-size:1.3rem;
+}
+.edit-delete-student-class div i{
+    cursor: pointer;
+}
+.orange-hover:hover{
+    color:#747474;
+}
+
+.red-hover:hover{
+    color:red;
+}   

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/table_template.css"> 
+    <link rel="stylesheet" href="css/addStudentModal.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Proza+Libre:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid-container" id="grid-container">
+        <div class="grid-header">
+                <header class="logo-text">
+                    <span class="logo">
+                        <img src="images/att.png" alt="Logo">
+                    </span>
+                    <div class="text">
+                        <span class="website-name">Attendify</span>
+                    </div>
+                </header>
+                <div class="burger-icon">
+                    <div id="main-burger-icon">
+                        <i class="fa-solid fa-bars" id="burger-icon-1"></i>
+                    </div>
+                    <div id="drop-down-menu2" class="drop-down-menu2">
+                            <div id="burger-icon-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-table"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="grid-sidebar"  id="grid-sidebar">
+            <aside id="aside">
+                <div class="wrapper-sidebar">
+                    
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-house"></i>
+                            <span><a href="#">Home</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-table"></i>
+                            <span><a href="#">trainees</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-comments"></i>
+                            <span><a href="#">trainees</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span><a href="#">Announcement</a></span>
+                        </div>
+                        
+                    </div>
+                    <div class="devider"></div>
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-user"></i>
+                            <span><a href="#">Profile</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span><a href="#">Log Out</a></span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        
+        <!-- body content -->
+        <div class="grid-body" id="grid-body">
+            <h1 class="page-title">Trainees Table</h1>
+            <hr>
+            <br><br>
+            <div class="table_template">
+                <table id="table">
+                    <tr id="head-row">
+                        <th class="corner1">ID</th>
+                        <th>Name</th>
+                        <th>Solved Tasks</th>
+                        <th>Total Tasks</th>
+                        <th class="corner2">Number of Absences</th>
+                    </tr>
+                    <tr id="empty-row">
+                        <td colspan="5">No data to show!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="table_gen_admin.js"></script>
+    <script src="func.js"></script>
+    <script src="dummydata.js"></script>
+</body>
+</html>
