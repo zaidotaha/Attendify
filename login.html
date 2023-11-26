@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Register.css">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="wrapper wrapper-login">
+        <div class="inner">
+        <div class="form login">
+            <header>Login</header>
+            <img src="images/image-1.png" alt="register image" class="image-login-1">
+            <form action="">
+                <div class="input-group">
+                    <input type="email" name="email-signup" id="email-signup" required>
+                    <i class="fa-solid fa-envelope"></i>
+                    <label for="email-signup">Email</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="password-signup" id="password-signup" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <label for="password-signup">Password</label>
+                </div>
+                <button type="reset" class="btn" onclick="login_function()">Login</button>
+            </form>
+            <img src="images/image-2.png" alt="register right image" class="image-login-2">
+        </div>
+        </div>
+    </section>
+    <script src="dummydata.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

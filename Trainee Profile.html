@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/Trainee Profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Proza+Libre:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid-container" id="grid-container">
+        <div class="grid-header">
+                <header class="logo-text">
+                    <span class="logo">
+                        <img src="images/att.png" alt="Logo">
+                    </span>
+                    <div class="text">
+                        <span class="website-name">Attendify</span>
+                    </div>
+                </header>
+                <div class="burger-icon">
+                    <div id="main-burger-icon">
+                        <i class="fa-solid fa-bars" id="burger-icon-1"></i>
+                    </div>
+                    <div id="drop-down-menu2" class="drop-down-menu2">
+                            <div id="burger-icon-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-table"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                    </div>
+                </div>
+                
+        </div>
+        <!-- sidebar -->
+        <div class="grid-sidebar"  id="grid-sidebar">
+            <aside id="aside">
+                <div class="wrapper-sidebar">
+                    
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-house"></i>
+                            <span><a href="Home-Trainer.html">Home</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-table"></i>
+                            <span><a href="traineetable_trainer.html">Trainees</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-comments"></i>
+                            <span><a href="feedback Table.html">Feedback</a></span>
+                        </div>
+                        
+                    </div>
+                    <div class="devider"></div>
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-user"></i>
+                            <span><a href="Trainee Profile.html">Profile</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span><a href="welcome.html">Log Out</a></span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        <!-- body content -->
+        <div class="grid-body" id="grid-body">
+            <h1 class="page-title">Profile</h1>
+            <hr>
+            <!-- Your html code here -->
+            <!-- <section class="wrapper">
+                <div class="inner">
+                <div class="form login">
+                    <header>Register Trainer</header>
+                    <form action="">
+                        <div class="firstName-lastName">
+                            <div class="input-group">
+                                <input type="text" name="firstName" id="firstName" required>
+                                <i class="fa-solid fa-user"></i>
+                                <label for="firstName">First Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="lastName" id="lastName" required>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email-signup" id="email-signup" required>
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email-signup">Email</label>
+                        </div>
+        
+                        <div class="input-group">
+                            <input type="password" name="password-signup" id="password-signup" required>
+                            <i class="fa-solid fa-lock"></i>
+                            <label for="password-signup">Password</label>
+                        </div>
+        
+                        <div class="input-group">
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                            <i class="fa-solid fa-lock"></i>
+                            <label for="confirmPassword">Confirm Password</label>
+                        </div>
+        
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+            </section> -->
+
+            <div class="profile-container">
+                <div class="form-container">
+                    <img class="profile-image" src="https://via.placeholder.com/100" alt="Profile Image">
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="trainerFirstName" name="firstName" placeholder="Enter your first name" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="trainerLastName" name="lastName" placeholder="Enter your last name" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="trainerEmail" name="email" placeholder="Enter your email" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="trainerPassword" name="password" placeholder="Enter your password" readonly>
+                    </div>
+                    <button class="submit-button" type="submit">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="func.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "news":[
+        {
+            "title": "Exciting News for Coding Trainers!",
+            "description": "Attention trainers! We are thrilled to announce new opportunities for coding instructors. Dive into the latest trends and resources to enhance your teaching skills.",
+            "image": "one.jpg"
+            },
+            {
+                "title": "Enhance Your Coding Instruction",
+                "description": "Calling all coding trainers! Explore innovative teaching techniques and tools to elevate your coding classes. Whether you're a seasoned instructor or just starting",
+                "image": "two.jpg"
+            },
+            {
+                "title": "Meet the Experts: Coding Webinar",
+                "description": "Join us for an exclusive webinar featuring expert coding instructors. Gain insights into industry best practices, teaching methodologies, and success stories.",
+                "image": "three.jpg"
+            },
+            {
+                "title": "Coding Challenge Announcement",
+                "description": "Attention coding trainers and enthusiasts! Get ready for an exciting coding challenge that will test your skills and creativity. Stay tuned for details on rules, prizes, and how to participate",
+                "image": "four.jpg"
+                },
+                {
+                    "title": "New Programming Languages Spotlight",
+                    "description": "Explore the latest programming languages making waves in the tech industry. As coding trainers, staying informed about emerging languages is crucial.",
+                    "image": "five.png"
+                },
+                {
+                    "title": "Student Success Stories",
+                    "description": "Celebrate the achievements of your coding students! We want to hear and share success stories from your coding classes.",
+                    "image": "three.jpg"
+                }
+    ]
+}
