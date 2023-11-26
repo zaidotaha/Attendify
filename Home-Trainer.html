@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Proza+Libre:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Slider and Notes css links -->
+    <link rel="stylesheet" href="css/sliderAndNotes.css">
+    <!-- OwlCarousel css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
+</head>
+<body>
+    
+    <div class="grid-container" id="grid-container">
+        <div class="grid-header">
+                <header class="logo-text">
+                    <span class="logo">
+                        <img src="images/att.png" alt="Logo">
+                    </span>
+                    <div class="text">
+                        <span class="website-name">Attendify</span>
+                    </div>
+                </header>
+                <div class="burger-icon">
+                    <div id="main-burger-icon">
+                        <i class="fa-solid fa-bars" id="burger-icon-1"></i>
+                    </div>
+                    <div id="drop-down-menu2" class="drop-down-menu2">
+                            <div id="burger-icon-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-table"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                    </div>
+                </div>
+                
+        </div>
+
+        <!-- sidebar -->
+        <div class="grid-sidebar"  id="grid-sidebar">
+            <aside id="aside">
+                <div class="wrapper-sidebar">
+                    
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-house"></i>
+                            <span><a href="#">Home</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-table"></i>
+                            <span><a href="traineetable_trainer.html">Trainees</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-comments"></i>
+                            <span><a href="feedback Table.html">Feedback</a></span>
+                        </div>
+                        
+                    </div>
+                    <div class="devider"></div>
+                    <div class="links">
+                        <div class="link">
+                            <i class="fa-solid fa-user"></i>
+                            <span><a href="Trainee Profile.html">Profile</a></span>
+                        </div>
+                        <div class="link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span><a href="welcome.html">Log Out</a></span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        
+        <!-- body content -->
+
+        <div class="grid-body" id="grid-body">
+            <h1 class="page-title">Home</h1>
+            <hr>
+            <div class="slider-notes-container">
+                <div class="sub-title">
+                    <h2>News</h2>
+                <hr>
+                </div>
+                <!-- Slider News -->
+                <div class="slide-container owl-carousel">
+                        <!-- Slides -->
+                </div>
+
+
+                <!-- Notes -->
+                <div class="sub-title">
+                    <h2>Notes</h2>
+                <hr>
+                </div>
+
+
+                <div class="notes-right">
+                    <div class="input-note">
+                        <textarea type="text" id="enter-note"></textarea>
+                        <div>
+                            <button type="button" id="add-note">Add Note</button>
+                            <button type="button" id="delete-note">Delete Note</button>
+                            <button type="button" id="confirm-delete-code">Confirm Delete</button>
+                        </div>
+                    </div>
+                    <div class="input-display">
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- owl carousel js -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="func.js"></script>
+</body>
+</html>
