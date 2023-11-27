@@ -1,5 +1,7 @@
 if(localStorage.length == 0){
     func2();
+    newfunc();
+    // n
 }
 
 function login_function(){

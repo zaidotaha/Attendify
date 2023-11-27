@@ -1,6 +1,6 @@
 
 function func2(){
-    
+    console.log("check");
     localStorage.setItem["current_user"] = "email@email1.com"; // normally, it should be gotten from login
 
     obj = {"fname":"first","lname":"last","email":"email@email.com","password":"password", "is_admin?":"yes"};
@@ -15,3 +15,9 @@ function func2(){
     localStorage.setItem("current_user","email@email0.com");   
 }
 
+
+
+// function funcky(){
+//     // current user in sessionstorage4
+//     // 4 arrays, one for trainer
+// }
