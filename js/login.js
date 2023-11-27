@@ -31,7 +31,6 @@ function login_function() {
     } 
 }
 
-
 function isKeyInLocalStorage(key) {
     return localStorage.getItem(key) !== null;
 }
