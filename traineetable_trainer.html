@@ -215,6 +215,7 @@
                         </div>
                         <div class="modal-content-form-normal-input">
                             <input type="text" value="" id="input_student_name">
+                            <div id="name_error" class="validation">Fill up student name</div>
                         </div>
                         <div class="modal-content-form-normal-input-row">    
                             <div>Solved Tasks</div>
@@ -223,9 +224,11 @@
                         <div class="modal-content-form-normal-input-row">    
                             <div>
                                 <input type="text" value="" id="input_solved_tasks">
+                                <div id="tasks_error" class="validation">Fill up student tasks</div>
                             </div>
                             <div>
                                 <input type="text" value="" id="input_absences">
+                                <div id="absences_error" class="validation">Fill up student absences</div>
                             </div>
                         </div>
                     </div>
@@ -250,6 +253,7 @@
                         </div>
                         <div class="modal-content-form-normal-input">
                             <input type="text" value="" id="input_tasks_added">
+                            <div id="numTasks_error" class="validation">Fill up number of tasks</div>
                         </div>
                     </div>
                     <hr>
@@ -275,6 +279,7 @@
                             <select name="students" id="student_list_dropdown">
                                 <option value=""></option>
                             </select>
+                            <div id="feedbackStudent_error" class="validation">Choose Student</div>
                         </div>
                         
                         <div class="modal-content-form-normal-input">
@@ -282,6 +287,7 @@
                         </div>
                         <div class="modal-content-form-normal-input">
                             <textarea type="text" value="" id="input_feedback_text"></textarea>
+                            <div id="feedback_error" class="validation">Fill up Feedback</div>
                         </div>
                     </div>
                     <hr>
@@ -305,6 +311,7 @@
                         </div>
                         <div class="modal-content-form-normal-input">
                             <input type="text" value="" id="input_student_name_edit">
+                            <div id="name_error_edit" class="validation">Fill up student name</div>
                         </div>
                         <div class="modal-content-form-normal-input-row">    
                             <div>Solved Tasks</div>
@@ -313,6 +320,7 @@
                         <div class="modal-content-form-normal-input-row">    
                             <div>
                                 <input type="text" value="" id="input_solved_tasks_edit">
+                                <div id="tasks_error_edit" class="validation">Fill up student tasks</div>
                             </div>
                             <div>
                                 <input type="text" value="" id="input_absences_edit">
@@ -324,6 +332,7 @@
                     <hr>
                     <div>
                         <input type="submit" id="form_edit_student" class="button form_button" value="Save">
+                        <div id="absences_error_edit" class="validation">Fill up student absences</div>
                     </div>
               </div>
             </div>
