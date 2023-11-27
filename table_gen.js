@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 });
 
 function add_student(){
+    if(add_student_Validation()){
         student_name = document.getElementById("input_student_name").value;
         solved_tasks = document.getElementById("input_solved_tasks").value;
         absences = document.getElementById("input_absences").value;
@@ -37,7 +38,73 @@ function add_student(){
         // document.getElementById("myModal").style.display = "none";
         table_update("student-"+new_ID);
 }
+}
 
+//student validation
+function add_student_Validation() {
+    student_name = document.getElementById("input_student_name").value;
+    solved_tasks = document.getElementById("input_solved_tasks").value;
+    absences = document.getElementById("input_absences").value;
+
+    let nameError = document.getElementById("name_error");
+    let tasksError = document.getElementById("tasks_error");
+    let absencesError = document.getElementById("absences_error");
+
+    if (student_name.trim() === "") {
+        document.getElementById("input_student_name").style.border = "1px solid red";
+        nameError.style.display = "block";
+        document.getElementById("input_student_name").focus();
+        return false;
+    }
+    else{
+        document.getElementById("input_student_name").style.border = "";
+        nameError.style.display = "none";
+    }
+
+    //validate name
+    let nameRegex = /^[a-zA-Z]+$/; 
+    if (!nameRegex.test(student_name.trim())) {
+        document.getElementById("input_student_name").style.border = "1px solid red";
+        nameError.innerText = "Name should contain only letters";
+        nameError.style.display = "block";
+        document.getElementById("input_student_name").focus();
+        return false;
+    } else {
+        document.getElementById("input_student_name").style.border = "";
+        nameError.style.display = "none";
+    }
+
+
+    if (solved_tasks.trim() === "") {
+        document.getElementById("input_solved_tasks").style.border = "1px solid red";
+        tasksError.style.display = "block";
+        document.getElementById("input_solved_tasks").focus();
+        return false;
+    }
+    else{
+        document.getElementById("input_solved_tasks").style.border = "";
+        tasksError.style.display = "none";
+    }
+
+    if (absences.trim() === "") {
+        document.getElementById("input_absences").style.border = "1px solid red";
+        absencesError.style.display = "block";
+        document.getElementById("input_absences").focus();
+        return false;
+    }
+    else{
+        document.getElementById("input_absences").style.border = "";
+        absencesError.style.display = "none";
+    }
+
+    
+
+    nameError.style.display = "none";
+    tasksError.style.display = "none";
+    absencesError.style.display = "none";
+
+    return true;
+}
 
 function increment_trainer_student(email){
     trainer_students_obj = JSON.parse(localStorage.getItem("students-"+email));
@@ -205,6 +272,7 @@ function generate_edit_delete_icon(){
  
 
 function add_feedback(){
+    if(add_feedback_Validation()){
     student_name = document.getElementById("student_list_dropdown").value;
     Feedback = document.getElementById("input_feedback_text").value;
     console.log(Feedback);
@@ -230,6 +298,43 @@ function add_feedback(){
     // following command automatically closes after adding
     // document.getElementById("myModal3").style.display = "none";
 }
+}
+
+// add feedback validation
+function add_feedback_Validation() {
+    student_name = document.getElementById("student_list_dropdown").value;
+    Feedback = document.getElementById("input_feedback_text").value;
+
+    let feedbackStudent_error = document.getElementById("feedbackStudent_error");
+    let feedback_error = document.getElementById("feedback_error");
+
+    if (student_name.trim() === "") {
+        document.getElementById("student_list_dropdown").style.border = "1px solid red";
+        feedbackStudent_error.style.display = "block";
+        document.getElementById("student_list_dropdown").focus();
+        return false;
+    }
+    else{
+        document.getElementById("student_list_dropdown").style.border = "";
+        feedback_error.style.display = "none";
+    }
+
+    if (Feedback.trim() === "") {
+        document.getElementById("input_feedback_text").style.border = "1px solid red";
+        feedback_error.style.display = "block";
+        document.getElementById("input_feedback_text").focus();
+        return false;
+    }
+    else{
+        document.getElementById("input_feedback_text").style.border = "";
+        feedback_error.style.display = "none";
+    }
+
+    feedbackStudent_error.style.display = "none";
+    feedback_error.style.display = "none";
+
+    return true;
+}
 
 function increment_trainer_feedback(email){
     trainer_feedback_obj = JSON.parse(localStorage.getItem("feedback-"+email));
@@ -242,6 +347,7 @@ function increment_trainer_feedback(email){
 }
 
 function add_tasks(){
+    if(add_tasks_Validation()){
     tasks = document.getElementById("input_tasks_added").value;
     currEmail = localStorage.getItem("current_user");
     trainer_students_obj = JSON.parse(localStorage.getItem("students-"+currEmail)); 
@@ -264,4 +370,29 @@ function add_tasks(){
     }
     document.getElementById("input_tasks_added").value = "";
     document.getElementById("myModal2").style.display = "none";
+}
+}
+
+// add Tasks validation
+function add_tasks_Validation() {
+    tasks = document.getElementById("input_tasks_added").value;
+
+    let numTasksError = document.getElementById("numTasks_error");
+    
+
+    if (tasks.trim() === "") {
+        document.getElementById("input_tasks_added").style.border = "1px solid red";
+        numTasksError.style.display = "block";
+        document.getElementById("input_tasks_added").focus();
+        return false;
+    }
+    else{
+        document.getElementById("input_tasks_added").style.border = "";
+        numTasksError.style.display = "none";
+    }
+
+
+    numTasksError.style.display = "none";
+
+    return true;
 }

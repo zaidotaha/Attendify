@@ -1,7 +1,7 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1000; /* Sit on top */
     padding-top: 0px; /* Location of the box */
     left: 0;
     top: 0;
@@ -126,4 +126,17 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+
+  /* validation */
+  .validation{
+    width: 100% !important;
+    font-size: 18px !important;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border: 1px solid #EF9A9A;
+    display: none;
   }
