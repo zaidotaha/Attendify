@@ -163,6 +163,17 @@ button{
     font-family: Righteous;
 }
 
+#pass_error,
+#email_error{
+    width: 100%;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
 
 /* Media Query */
 /* // Small devices (landscape phones, less than 750px) */

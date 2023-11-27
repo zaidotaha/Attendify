@@ -16,16 +16,19 @@
             <img src="images/image-1.png" alt="register image" class="image-login-1">
             <form action="">
                 <div class="input-group">
-                    <input type="email" name="email-signup" id="email-signup" required>
+                    <input type="email" name="email-login" id="email-login" required>
                     <i class="fa-solid fa-envelope"></i>
-                    <label for="email-signup">Email</label>
+                    <label for="email-login">Email</label>
+                    
                 </div>
-
+                <div id="email_error">Please fill up you're email</div>
                 <div class="input-group">
                     <input type="password" name="password-signup" id="password-signup" required>
                     <i class="fa-solid fa-lock"></i>
                     <label for="password-signup">Password</label>
+                    
                 </div>
+                <div id="pass_error">Please fill up you're password</div>
                 <button type="reset" class="btn" onclick="login_function()">Login</button>
             </form>
             <img src="images/image-2.png" alt="register right image" class="image-login-2">
