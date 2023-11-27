@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/Register.css">
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- sweet alert -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
 </head>
 <body>
     <section class="wrapper wrapper-login">
@@ -16,17 +19,18 @@
             <img src="images/image-1.png" alt="register image" class="image-login-1">
             <form action="">
                 <div class="input-group">
-                    <input type="email" name="email-signup" id="email-signup" required>
+                    <input type="email" name="email-login" id="email-login" required>
                     <i class="fa-solid fa-envelope"></i>
-                    <label for="email-signup">Email</label>
+                    <label for="email-login">Email</label>
                 </div>
-
+                <div id="email_error">Please fill up you're email</div>
                 <div class="input-group">
-                    <input type="password" name="password-signup" id="password-signup" required>
+                    <input type="password" name="password-login" id="password-login" required>
                     <i class="fa-solid fa-lock"></i>
-                    <label for="password-signup">Password</label>
+                    <label for="password-login">Password</label>
                 </div>
-                <button type="reset" class="btn" onclick="login_function()">Login</button>
+                <div id="pass_error">Please fill up you're password</div>
+                <button type="button" class="btn" onclick="login_function()">Login</button>
             </form>
             <img src="images/image-2.png" alt="register right image" class="image-login-2">
         </div>
