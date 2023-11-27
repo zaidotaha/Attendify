@@ -6,6 +6,21 @@ class account{
         this.password = password;
         this.role = role;
     }
+    
+    editAccount(newFname, newLname, newPassword, newRole) {
+        if (newFname) {
+            this.fname = newFname;
+        }
+        if (newLname) {
+            this.lname = newLname;
+        }
+        if (newPassword) {
+            this.password = newPassword;
+        }
+        if (newRole) {
+            this.role = newRole;
+        }
+    }
 }
 
 class student{
@@ -15,7 +30,20 @@ class student{
         this.solved_tasks = solved_tasks;
         this.absences = absences;
     }
+
+    editStudent(newFullName, newSolvedTasks, newAbsences) {
+        if (newFullName) {
+            this.full_name = newFullName;
+        }
+        if (newSolvedTasks !== undefined) {
+            this.solved_tasks = newSolvedTasks;
+        }
+        if (newAbsences !== undefined) {
+            this.absences = newAbsences;
+        }
+    }
 }
+
 
 class feedback{
     constructor(feedbackID,student_name,trainer_name,FbDate){
